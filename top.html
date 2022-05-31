@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="utf-8">
@@ -16,6 +16,9 @@ $(document).ready(function(){//시작
 		}else{
 			$("nav").slideUp();
 			$(this).text("menu");
+			$("nav").slideUp(400,function(){
+				$("iframe" ,  parent.document).css("height" ,  "51.9pt");	
+			});
 			//$("iframe" ,  parent.document).css("height" ,  "51.9pt");
 		}
 	}); //햄버거아이콘 클릭. 끝부분
